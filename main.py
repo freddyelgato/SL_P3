@@ -6,6 +6,9 @@ app,rt = fast_app()
 def get(): return P('Nice to be here!')
 
 @rt('/')
-def get(): return Div(P('Hello World!'), hx_get="/change")
+def get(): return Div(
+    P('Hello World!'),
+    H2('By Freddy uwu'), 
+    hx_get="/change")
 
 serve()
